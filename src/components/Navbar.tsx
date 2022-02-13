@@ -19,7 +19,7 @@ const Github = () => {
 
 const Navbar = () => {
   return (
-    <nav className="z-50 w-full p-3">
+    <nav className="sticky top-0 z-50 w-full p-3">
       <div className="flex w-full justify-between">
         <Image src="/Logo.png" width="150" height="31" />
         <a href="https://github.com/jdpena28/tailwind-x-ui">

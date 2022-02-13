@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#text__gradient {
+  background-image: linear-gradient(to right, #2966c2, #7eaef7, #bcbdbf 105%);
+}
