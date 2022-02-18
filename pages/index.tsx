@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Catalog from "@/components/Catalog";
 
 const Button = () => {
   return (
@@ -35,14 +37,14 @@ const Home: NextPage = () => {
   return (
     <section
       style={{ backgroundImage: "url(./Background.png)" }}
-      className="h-screen bg-cover bg-no-repeat px-6 text-white">
+      className="relative h-screen bg-cover bg-no-repeat px-6 text-white">
       <NextSeo
         title="Tailwind-X-UI"
         description="An on the go jsx component collections for Tailwind CSS"
       />
       <div className="container mx-auto flex h-full w-full flex-col justify-center px-4">
         <Navbar />
-        <div className="my-auto space-y-8">
+        <div className="z-20 my-auto space-y-8">
           <h1 className="text-8xl font-bold">
             Tailwind React <br />
             <span id="text__gradient" className="bg-clip-text text-transparent">
@@ -54,6 +56,13 @@ const Home: NextPage = () => {
           </p>
           <Button />
         </div>
+        <div className="absolute right-0 select-none">
+          <Image src="/Skeletal-Loading.png" width={200} height={141} />
+        </div>
+        <div className="absolute top-14 right-28 select-none">
+          <Image src="/Toggle Switch.png" width={200} height={141} />
+        </div>
+        <Catalog />
       </div>
     </section>
   );

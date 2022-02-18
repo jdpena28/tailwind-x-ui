@@ -6,3 +6,9 @@
 #text__gradient {
   background-image: linear-gradient(to right, #2966c2, #7eaef7, #bcbdbf 105%);
 }
+.heart:hover {
+  fill: #f6831d;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 700;
+  stroke-width: 2;
+}
